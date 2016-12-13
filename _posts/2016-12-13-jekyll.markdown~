@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Jekyll!"
-date:   2016-12-13 22:00:39 +0530
-categories: jekyll use
----
-
-I have chosen Jekyll to create my website. As it my website will be a static webiste, plus I will be using github pages, Jekyll seem to be the ideal platform to use.
-I used the official Jekyll documentation (https://jekyllrb.com/docs/home/) and this tutorial (https://www.taniarascia.com/make-a-static-website-with-jekyll/) to get started.
