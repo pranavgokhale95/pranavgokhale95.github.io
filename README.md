@@ -1,2 +1,1 @@
-# Pranav Gokhale 
-Personal Website
+# My Personal Website
