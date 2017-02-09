@@ -12,11 +12,11 @@ picture: /assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: false
-resume-url: assets/Resume_Pranav_Gokhale.pdf
+resume-external: true
+resume-url: https://drive.google.com/open?id=0BzDiqW98EP5dUmU2aFFVQUxLVk0
 
 url: https://github.com/pranavgokhale95
-# your url: http://USERNAME.github.io
+
 
 permalink: /:title/
 
