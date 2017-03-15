@@ -11,11 +11,16 @@ picture: /assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: false
-resume-url: assets/Resume_Pranav_Gokhale.pdf
+resume-external: true
+resume-url: https://drive.google.com/open?id=0BzDiqW98EP5dUmU2aFFVQUxLVk0
 
 url: http://pranavgokhale.me
+
+<<<<<<< HEAD
+url: http://pranavgokhale.me
 # your url: http://USERNAME.github.io
+=======
+>>>>>>> 930dc0e437bcc7a35136c22d407b79122febfbb3
 
 permalink: /:title/
 
@@ -23,7 +28,7 @@ markdown: kramdown
 highlighter: rouge
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: UA-91849903-1
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
