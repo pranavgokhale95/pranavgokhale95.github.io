@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hobby page working?"
+title:  "My hobbies"
 date:   2017-02-08 22:13:29 +0530
 category: hobbies
 ---
 
-Trial post with the new category of Hobbies.
+My hobbies include drawing, painting, driving/going on long rides, gaming, watching football. I love travelling. I love sports. I will post some of my best hobby-related things here. 

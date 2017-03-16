@@ -16,12 +16,6 @@ resume-url: https://drive.google.com/open?id=0BzDiqW98EP5dUmU2aFFVQUxLVk0
 
 url: http://pranavgokhale.me
 
-<<<<<<< HEAD
-url: http://pranavgokhale.me
-# your url: http://USERNAME.github.io
-=======
->>>>>>> 930dc0e437bcc7a35136c22d407b79122febfbb3
-
 permalink: /:title/
 
 markdown: kramdown
