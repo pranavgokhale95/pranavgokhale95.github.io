@@ -5,17 +5,17 @@ date:   2017-03-15 18:37:02 +0530
 category: projects
 ---
 
-# The Snake Game
+## The Snake Game
 The notorious **Snake** Game. Celebrating the "relaunch" of Nokia 3310!
 
 ## How to play?
 Clone the game first:
-```{r, engine='bash', count_lines}
+```bash
 git clone https://github.com/pranavgokhale95/Snake_Game.git
 ```
 
 Run the game as below:
-```{r, engine='bash', count_lines}
+```bash
 cd Snake_Game
 g++ -o snake snake_linux.cpp
 ./snake
