@@ -1,2 +1,0 @@
-# Pranav Gokhale 
-Personal Website
