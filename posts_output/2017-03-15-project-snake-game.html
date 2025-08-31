@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Snake"</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="post-header">
+            <h1>"Snake"</h1>
+            <div class="post-meta">
+                <span class="date">2017-03-15 18:37:02 +0530</span>
+                <span class="reading-time">📖 2 min read</span>
+            </div>
+            <div class="tags">
+                <span class="tag">projects</span>
+            </div>
+        </header>
+        
+        <main class="post-content">
+            <h2>The Snake Game</h2>
+<p>The notorious <strong>Snake</strong> Game. Celebrating the "relaunch" of Nokia 3310!</p>
+<h2>How to play?</h2>
+<p>Clone the game first:
+<code>bash
+git clone https://github.com/pranavgokhale95/Snake_Game.git</code></p>
+<p>Run the game as below:
+<code>bash
+cd Snake_Game
+g++ -o snake snake_linux.cpp
+./snake</code></p>
+<p>Use the following keys:<br>
+<kbd>w</kbd> -- for going up <br>
+<kbd>s</kbd> -- for going down <br>
+<kbd>a</kbd> -- for going left <br>
+<kbd>d</kbd> -- for going right <br>
+and eat the food represented by "<strong>$</strong>" to increase your score ie. the length of the snake.</p>
+<p>PS: Press the key and wait for a second. </p>
+<p>The game is over when: The head of the snake hits any part of the snake. </p>
+<p>Want to stop the game in between? Use <kbd>Ctrl</kbd>+<kbd>z</kbd> just in case.</p>
+<h2>Known Issues?</h2>
+<ul>
+<li>Render food everytime. Disappears when food appears on snake </li>
+<li>Solve the length=2 snake length problem (Turns back on its head, then the game isn't over!. Logical problem)</li>
+</ul>
+<p>Apart from these issues please report any other issues in the issue section. Thanks!</p>
+<h2>Possible Improvements or Addition of Features</h2>
+<ul>
+<li>Possible optimization in code.</li>
+<li>Make the game fast (The sleep is annoying but helpful for debugging. Reduce it if you want)</li>
+<li>Add a more random rand() function. The seed can specified and srand can be used.</li>
+<li>Add obstacles ie. add different game modes.</li>
+<li>The simple do-while for play again :P</li>
+<li>Add a section for high scores and corresponding names.</li>
+</ul>
+        </main>
+        
+        <footer class="post-footer">
+            <a href="../index.html" class="back-link">← Back to Posts</a>
+        </footer>
+    </div>
+</body>
+</html>

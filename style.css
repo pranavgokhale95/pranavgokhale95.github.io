@@ -1,0 +1,396 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #0a0a0a;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.main-header {
+    background: #1a1a1a;
+    padding: 2rem 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #b0b0b0;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin-right: 0.5rem;
+}
+
+nav a:hover, nav a.active {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Main content layout - wider sidebar */
+.main-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Sidebar styles - optimized for more posts */
+.sidebar {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 2rem;
+    border: 1px solid #333;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.tag-section {
+    margin-bottom: 1.5rem;
+}
+
+.tag-header {
+    font-size: 1rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.post-preview {
+    padding: 0.75rem;
+    background: #2a2a2a;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.post-preview:hover {
+    background: #333;
+    transform: translateY(-1px);
+    border-color: #555;
+}
+
+.post-preview h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.post-preview h4 a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.post-preview h4 a:hover {
+    color: #4dabf7;
+}
+
+/* Compact post meta for sidebar */
+.post-preview .post-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    color: #888;
+    flex-wrap: wrap;
+}
+
+.post-preview .reading-time {
+    color: #4dabf7;
+    font-weight: 500;
+}
+
+.post-preview .tags {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.post-preview .tag {
+    background: #333;
+    color: #b0b0b0;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border: 1px solid #555;
+}
+
+/* Content area styles */
+.content-area h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.recent-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-preview.featured {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.post-preview.featured h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-preview.featured h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-preview.featured h3 a:hover {
+    color: #4dabf7;
+}
+
+/* Post meta styles for featured posts */
+.post-preview.featured .post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.post-preview.featured .reading-time {
+    color: #4dabf7;
+    font-weight: 500;
+}
+
+.post-preview.featured .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.post-preview.featured .tag {
+    background: #333;
+    color: #b0b0b0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #555;
+}
+
+/* Individual post page styles */
+.post-header {
+    background: #1a1a1a;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+}
+
+.post-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.post-content {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+}
+
+.post-content h2, .post-content h3, .post-content h4 {
+    margin: 2rem 0 1rem 0;
+    color: #ffffff;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    border: 1px solid #333;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #4dabf7;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #b0b0b0;
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.post-content code {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    border: 1px solid #333;
+}
+
+.post-content pre {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #333;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.post-footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #4dabf7;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    background: #74c0fc;
+    transform: translateY(-2px);
+}
+
+/* About page styles */
+.about-content {
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sidebar {
+        position: static;
+        order: 2;
+        max-height: none;
+    }
+    
+    .post-header h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .post-header, .post-content, .about-content {
+        padding: 1.5rem;
+    }
+}
